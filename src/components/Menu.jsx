@@ -3,8 +3,10 @@ import {
   IconBrandReact,
   IconHome,
   IconInfoCircle,
-  IconRouteAltLeft,
   IconSquareRoundedNumber1,
+  IconSquareRoundedNumber2,
+  IconSquareRoundedNumber3,
+  IconSquareRoundedNumber4,
 } from "@tabler/icons-react";
 import { NavLink } from "react-router-dom";
 
@@ -63,9 +65,24 @@ export function Menu() {
 
         <span className="pt-4 pl-3 text-xs text-zinc-500">Estado</span>
 
-        <NavLink to="estado1" className={getEstilo}>
+        <NavLink to="semEstado" className={getEstilo}>
           <IconSquareRoundedNumber1 />
-          Estado 1
+          Sem Estado
+        </NavLink>
+
+        <NavLink to="comEstado" className={getEstilo}>
+          <IconSquareRoundedNumber2 />
+          Com Estado
+        </NavLink>
+
+        <NavLink to="campoTexto" className={getEstilo}>
+          <IconSquareRoundedNumber3 />
+          Campo de Texto
+        </NavLink>
+
+        <NavLink to="contador" className={getEstilo}>
+          <IconSquareRoundedNumber4 />
+          Contador
         </NavLink>
       </nav>
 
