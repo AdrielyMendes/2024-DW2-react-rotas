@@ -3,6 +3,8 @@ import {
   IconBrandReact,
   IconHome,
   IconInfoCircle,
+  IconMessageDown,
+  IconMessageUp,
   IconSquareRoundedNumber1,
   IconSquareRoundedNumber2,
   IconSquareRoundedNumber3,
@@ -84,6 +86,19 @@ export function Menu() {
           <IconSquareRoundedNumber4 />
           Contador
         </NavLink>
+        
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Comunicação</span>
+
+        <NavLink to="comunicacao-direta" className={getEstilo}>
+          <IconMessageDown />
+          Comunicação Direta
+        </NavLink>
+
+        <NavLink to="comunicacao-indireta" className={getEstilo}>
+          <IconMessageUp />
+          Comunicação Indireta
+        </NavLink>
+        
       </nav>
 
       <footer className="absolute bottom-0 p-2 flex justify-center">
