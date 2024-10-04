@@ -98,12 +98,18 @@ export function Menu() {
           <IconMessageUp />
           Comunicação Indireta
         </NavLink>
+
+        <NavLink to="useRef" className={getEstilo}>
+          <IconMessageUp />
+          Use Ref
+        </NavLink>
+
+        <NavLink to="useEffect" className={getEstilo}>
+          <IconMessageUp />
+          UseEffect
+        </NavLink>
         
       </nav>
-
-      <footer className="absolute bottom-0 p-2 flex justify-center">
-        <span>Desenvolvimento Web 2</span>
-      </footer>
     </aside>
   );
 }

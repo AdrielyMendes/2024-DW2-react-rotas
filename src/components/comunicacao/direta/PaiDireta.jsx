@@ -29,9 +29,9 @@ export function PaiDireta() {
                 </button>
                 {/* <span className="text-4xl p-5"></span> */}
 
-                <FilhoDireta texto={nome}/>
 
             </div>
+            <FilhoDireta texto={nome}/>
         </div>
     
 
